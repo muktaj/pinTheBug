@@ -4,7 +4,7 @@ window.bugHandler = {
 	bugsKilled : 0,
 	bugBigTime : 14,
 	bugMedTime : 12,
-	bugSmallTime : 10,
+	bugSmallTime : 20,
 	pathPoints : 0,
 	contentHeight : 0,
 	contentWidth : 1028,	
