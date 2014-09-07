@@ -25,7 +25,7 @@ window.bugHandler = {
 		window.bugHandler.pathPoints = 0;
 		window.bugHandler.bugBigTime = 14;
 		window.bugHandler.bugMedTime = 12;
-		window.bugHandler.bugSmallTime = 10;
+		window.bugHandler.bugSmallTime = 20;
 		window.bugHandler.bugBigAlive = true;
 		window.bugHandler.bugMedAlive = true;
 		window.bugHandler.bugSmallAlive = true;
@@ -86,7 +86,7 @@ window.bugHandler = {
 				$("#content").css('cursor','url(./images/pinYellow.png) ,auto');
 			}, 200);
 
-			audioSlap.play();
+			//audioSlap.play();
 
 		});
 
@@ -96,7 +96,8 @@ window.bugHandler = {
 				return;
 			}
 			$(this).attr("currentClicked","true");
-			audioKill.play();
+			//audioKill.play();
+			audioSlap.play();
         	        $(this)[0].pauseAnimations();
 			window.bugHandler.bugsKilled += 1;
 			window.bugHandler.setBugsKilled();
